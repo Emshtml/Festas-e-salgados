@@ -1,11 +1,14 @@
+import coxinha from "../assets/produtos/coxinha.jpg";
+import kibe from "../assets/produtos/kibe.jpg";
+
 const produtos = [
   {
     nome: "Coxinha",
-    imagem: "/src/assets/produtos/coxinha.jpg",
+    imagem: coxinha,
   },
   {
     nome: "Kibe",
-    imagem: "/src/assets/produtos/kibe.jpg",
+    imagem: kibe,
   },
 ];
 
