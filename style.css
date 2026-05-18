@@ -11,8 +11,8 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #fcfbfa; /* Off-white premium */
-    color: #2c2520; /* Marrom escuro quase preto, mais suave que o preto puro */
+    background-color: #fcfbfa; 
+    color: #2c2520; 
 }
 
 /* --- NAVBAR --- */
@@ -35,7 +35,7 @@ body {
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #8c6d4f; /* Tom Ouro Velho / Bronze */
+    color: #8c6d4f; 
 }
 
 nav a {
@@ -65,9 +65,10 @@ nav a:hover {
 
 /* --- HERO SECTION --- */
 .hero {
-    height: 80vh;
-    background: linear-gradient(rgba(44, 37, 32, 0.6), rgba(44, 37, 32, 0.5)), 
-                url('imagens/hero-background.jpg') center/cover no-repeat;
+    height: 65vh;
+    /* Imagem de fundo luxuosa de mesa de doces/festa */
+    background: linear-gradient(rgba(44, 37, 32, 0.7), rgba(44, 37, 32, 0.6)), 
+                url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&q=80&w=1200') center/cover no-repeat;
     display: flex;
     align-items: center;
     padding: 0 8%;
@@ -166,6 +167,7 @@ nav a:hover {
     position: relative;
     height: 260px;
     overflow: hidden;
+    background-color: #eae5e0; /* Fallback de cor caso falte internet */
 }
 
 .card-image img {
@@ -183,7 +185,7 @@ nav a:hover {
     position: absolute;
     top: 15px;
     left: 15px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     padding: 6px 14px;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -235,11 +237,11 @@ nav a:hover {
 .btn-whatsapp {
     display: inline-block;
     padding: 16px 40px;
-    background-color: #25d366; /* Cor oficial do WhatsApp */
+    background-color: #25d366; 
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
-    border-radius: 30px; /* Estilo pílula para o botão de ação final */
+    border-radius: 30px; 
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
@@ -257,25 +259,13 @@ nav a:hover {
 .footer-bottom p {
     font-size: 0.8rem;
     color: #8c7d70;
-    margin-bottom: 0;
 }
 
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 20px 5%;
-    }
-    nav {
-        display: none; /* Dica: você pode implementar um menu hamburguer futuramente */
-    }
-    .hero {
-        padding: 0 5%;
-        height: 70vh;
-    }
-    .hero-content h1 {
-        font-size: 2.4rem;
-    }
-    .menu-section {
-        padding: 60px 5%;
-    }
+    .navbar { padding: 20px 5%; }
+    nav { display: none; }
+    .hero { padding: 0 5%; height: 60vh; }
+    .hero-content h1 { font-size: 2.4rem; }
+    .menu-section { padding: 60px 5%; }
 }
