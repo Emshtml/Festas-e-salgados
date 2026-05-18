@@ -1,3 +1,5 @@
+import festa from "../assets/galeria/festa-1.jpg";
+
 export default function Sobre() {
   return (
     <section
@@ -16,7 +18,7 @@ export default function Sobre() {
         </div>
 
         <img
-          src="/src/assets/galeria/festa-1.jpg"
+          src={festa}
           alt="Sobre"
           className="rounded-[40px]"
         />
