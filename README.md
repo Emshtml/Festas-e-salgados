@@ -44,7 +44,23 @@ Entre na pasta:
 
 ```bash
 cd adriana-salgados
-```
+```festas-e-salgados/
+│
+├── public/
+│   └── images/
+│       ├── coxinha.jpg
+│       ├── kibe.jpg
+│       └── bolinha-queijo.jpg
+│
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── .gitignore
 
 Instale as dependências:
 
@@ -64,22 +80,7 @@ npm run dev
 
 ```bash
 src/
-├── assets/
-│
-├── components/
-│   ├── Navbar.jsx
-│   ├── Hero.jsx
-│   ├── Destaques.jsx
-│   ├── Produtos.jsx
-│   ├── Sobre.jsx
-│   ├── Depoimentos.jsx
-│   ├── Galeria.jsx
-│   ├── CTA.jsx
-│   └── Footer.jsx
-│
-├── App.jsx
-├── main.jsx
-└── index.css
+
 ```
 
 ---
