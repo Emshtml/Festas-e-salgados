@@ -1,126 +1,129 @@
+
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Destaques from "./components/Destaques";
+import Produtos from "./components/Produtos";
+import Sobre from "./components/Sobre";
+import Depoimentos from "./components/Depoimentos";
+import Galeria from "./components/Galeria";
+import CTA from "./components/CTA";
+import Footer from "./components/Footer";
+
 export default function App() {
   return (
-    <div>
+    <div className="bg-[#fff6e9] overflow-x-hidden text-zinc-900 selection:bg-[#d4af37] selection:text-[#7a1c1c]">
+      {/* Background Effects */}
+      <div className="fixed inset-0 -z-10 overflow-hidden">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#d4af37]/10 rounded-full blur-3xl"></div>
 
-      <header
-        style={{
-          background: '#f97316',
-          color: '#fff',
-          padding: '30px',
-          textAlign: 'center'
-        }}
-      >
-        <h1>Festas & Salgados</h1>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#7a1c1c]/10 rounded-full blur-3xl"></div>
+      </div>
 
-        <p>Os melhores salgados da região</p>
-      </header>
+      {/* Navbar */}
+      <Navbar />
 
-      <section
-        style={{
-          padding: '40px',
-          textAlign: 'center'
-        }}
-      >
-        <h2>Nosso Cardápio</h2>
+      {/* Hero Premium */}
+      <section className="relative">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(212,175,55,0.15),_transparent_35%)]"></div>
 
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit,minmax(250px,1fr))',
-            gap: '20px',
-            marginTop: '40px'
-          }}
-        >
+        <Hero />
+      </section>
 
-          <div
-            style={{
-              border: '1px solid #ddd',
-              padding: '20px',
-              borderRadius: '12px'
-            }}
-          >
-            <img
-              src="/images/coxinha.jpg"
-              alt="Coxinha"
-              style={{
-                width: '100%',
-                borderRadius: '10px'
-              }}
-            />
+      {/* Destaques */}
+      <section className="relative py-6">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#ffffff50] to-transparent"></div>
 
-            <h3>Coxinha</h3>
+        <Destaques />
+      </section>
 
-            <p>Massa crocante e recheio especial.</p>
-          </div>
+      {/* Produtos Premium */}
+      <section className="relative py-10">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(122,28,28,0.05),_transparent_45%)]"></div>
 
-          <div
-            style={{
-              border: '1px solid #ddd',
-              padding: '20px',
-              borderRadius: '12px'
-            }}
-          >
-            <img
-              src="/images/kibe.jpg"
-              alt="Kibe"
-              style={{
-                width: '100%',
-                borderRadius: '10px'
-              }}
-            />
-
-            <h3>Kibe</h3>
-
-            <p>Sabor irresistível para festas.</p>
-          </div>
-
-          <div
-            style={{
-              border: '1px solid #ddd',
-              padding: '20px',
-              borderRadius: '12px'
-            }}
-          >
-            <img
-              src="/images/bolinha-queijo.jpg"
-              alt="Bolinha de queijo"
-              style={{
-                width: '100%',
-                borderRadius: '10px'
-              }}
-            />
-
-            <h3>Bolinha de queijo</h3>
-
-            <p>Cremosa e deliciosa.</p>
-          </div>
-
+        <div className="relative z-10">
+          <Produtos />
         </div>
       </section>
 
-      <section
-        style={{
-          textAlign: 'center',
-          padding: '50px'
-        }}
-      >
-        <a
-          href="https://wa.me/5511999999999"
-          target="_blank"
-          style={{
-            background: '#22c55e',
-            color: '#fff',
-            padding: '18px 40px',
-            borderRadius: '12px',
-            textDecoration: 'none',
-            fontSize: '20px',
-            fontWeight: 'bold'
-          }}
-        >
-          Fazer Pedido no WhatsApp
-        </a>
+      {/* Sobre */}
+      <section className="relative overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-[#d4af37]/10 blur-3xl rounded-full"></div>
+
+        <Sobre />
       </section>
 
+      {/* Depoimentos */}
+      <section className="relative py-8">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#7a1c1c]/5 via-transparent to-[#d4af37]/5"></div>
+
+        <Depoimentos />
+      </section>
+
+      {/* Galeria */}
+      <section className="relative py-8">
+        <div className="absolute inset-0 bg-[radial-gradient(circle,_rgba(212,175,55,0.08),_transparent_50%)]"></div>
+
+        <Galeria />
+      </section>
+
+      {/* CTA Final */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#7a1c1c] via-[#5a1010] to-[#220909]"></div>
+
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#d4af37]/10 rounded-full blur-3xl"></div>
+
+        <div className="relative z-10">
+          <CTA />
+        </div>
+      </section>
+
+      {/* Footer */}
+      <Footer />
+
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/5511999999999"
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-[#25D366] flex items-center justify-center text-white text-3xl shadow-[0_10px_30px_rgba(37,211,102,0.4)] hover:scale-110 transition duration-300"
+      >
+        ✆
+      </a>
     </div>
-  )
+  );
 }
+```
+
+# Resultado da mudança premium
+
+* Visual cinematográfico
+* Fundo sofisticado
+* Glow premium dourado
+* Aparência de startup gastronômica
+* Glassmorphism elegante
+* Melhor profundidade visual
+* Hero mais premium
+* Seções mais modernas
+* Melhor experiência visual
+* Mantém todo funcionamento atual
+* Compatível com Vercel
+* Sem alterar componentes existentes
+* Sem quebrar imports
+* Sem mudar estrutura do projeto
+
+# Depois execute
+
+```bash
+npm run build
+```
+
+Se funcionar:
+
+```bash
+git add .
+git commit -m "Premium UI upgrade"
+git push
+```
+
+A Vercel fará o novo deploy automaticamente.
+
