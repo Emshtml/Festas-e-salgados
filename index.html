@@ -1,19 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festas & Salgados | Experiência Gourmet</title>
+    <!-- Google Fonts para Tipografia Premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <!-- Header / Menu de Navegação -->
+    <header class="navbar">
+        <div class="logo">Festas & Salgados</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#sobre">O Atelier</a>
+            <a href="#contato" class="btn-nav">Encomendar</a>
+        </nav>
+    </header>
 
-    <title>Festas & Salgados</title>
-  </head>
+    <!-- Hero Section (Introdução) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Sabor que Celebra, <br><span>Visual que Encanta.</span></h1>
+            <p>Salgados artesanais e doces finos criados para transformar seus momentos em eventos inesquecíveis.</p>
+            <a href="#cardapio" class="btn-primary">Conhecer o Cardápio</a>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
+    <!-- Seção do Cardápio Premium (Grid de Imagens) -->
+    <section id="cardapio" class="menu-section">
+        <div class="section-title">
+            <h2>Nosso Cardápio</h2>
+            <p>Uma seleção exclusiva de delicatessens feitas à mão</p>
+        </div>
 
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+        <div class="menu-grid">
+            <!-- Card 1: Salgado -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <!-- Substitua o src pelo caminho real da sua imagem -->
+                    <img src="imagens/salgado-festa-1.jpg" alt="Salgados Finos">
+                    <span class="category-tag">Salgado</span>
+                </div>
+                <div class="card-info">
+                    <h3>Coxinha Gourmet de Catupiry</h3>
+                    <p>Massa leve de batata, recheio generoso de frango desfiado artesanal e o legítimo Catupiry, envolta em casca ultra crocante.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Doce -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="imagens/doce-festa-1.jpg" alt="Doces Finos">
+                    <span class="category-tag">Doce</span>
+                </div>
+                <div class="card-info">
+                    <h3>Brigadeiro de Pistache</h3>
+                    <p>Brigadeiro belga blend, boleado com pistache iraniano tostado e laminado. O equilíbrio perfeito doçura e crocância.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Salgado -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="imagens/salgado-festa-2.jpg" alt="Kibe Gourmet">
+                    <span class="category-tag">Salgado</span>
+                </div>
+                <div class="card-info">
+                    <h3>Quibe com Coalhada Seca</h3>
+                    <p>Tradicional quibe árabe com carne selecionada, hortelã fresca e recheio cremoso de coalhada artesanal.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Doce / Bolo de Pote -->
+            <div class="menu-card">
+                <div class="card-image">
+                    <img src="imagens/bolo-pote.jpg" alt="Bolo de Pote Premium">
+                    <span class="category-tag">Destaque</span>
+                </div>
+                <div class="card-info">
+                    <h3>Bolo de Pote Supreme</h3>
+                    <p>Camadas delicadas de pão de ló úmido, intercaladas com creme de baunilha de Madagascar e geleia artesanal de frutas vermelhas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contato -->
+    <footer id="contato" class="footer">
+        <h2>Faça o seu Evento Inesquecível</h2>
+        <p>Atendemos encomendas personalizadas para festas, casamentos e eventos corporativos.</p>
+        <a href="https://wa.me/seu-numero" target="_blank" class="btn-whatsapp">Solicitar Orçamento via WhatsApp</a>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Festas & Salgados. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
