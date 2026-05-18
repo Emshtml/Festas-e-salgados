@@ -1,8 +1,8 @@
+import festa1 from "../assets/galeria/festa-1.jpg";
+import festa2 from "../assets/galeria/festa-2.jpg";
+
 export default function Galeria() {
-  const imagens = [
-    "/src/assets/galeria/festa-1.jpg",
-    "/src/assets/galeria/festa-2.jpg",
-  ];
+  const imagens = [festa1, festa2];
 
   return (
     <section className="py-24 px-6 bg-white">
