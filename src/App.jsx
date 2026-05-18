@@ -11,17 +11,20 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <div className="bg-[#fff6e9] overflow-x-hidden text-zinc-900 selection:bg-[#d4af37] selection:text-[#7a1c1c]">
-      {/* Background Effects */}
+      
+      {/* Background Premium */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#d4af37]/10 rounded-full blur-3xl"></div>
 
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#7a1c1c]/10 rounded-full blur-3xl"></div>
+
+        <div className="absolute top-1/2 left-1/2 w-[700px] h-[700px] bg-[#d4af37]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
       </div>
 
       {/* Navbar */}
       <Navbar />
 
-      {/* Hero Premium */}
+      {/* Hero */}
       <section className="relative">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(212,175,55,0.15),_transparent_35%)]"></div>
 
@@ -30,12 +33,14 @@ export default function App() {
 
       {/* Destaques */}
       <section className="relative py-6">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#ffffff50] to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#ffffff40] to-transparent"></div>
 
-        <Destaques />
+        <div className="relative z-10">
+          <Destaques />
+        </div>
       </section>
 
-      {/* Produtos Premium */}
+      {/* Produtos */}
       <section className="relative py-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(122,28,28,0.05),_transparent_45%)]"></div>
 
@@ -55,14 +60,18 @@ export default function App() {
       <section className="relative py-8">
         <div className="absolute inset-0 bg-gradient-to-r from-[#7a1c1c]/5 via-transparent to-[#d4af37]/5"></div>
 
-        <Depoimentos />
+        <div className="relative z-10">
+          <Depoimentos />
+        </div>
       </section>
 
       {/* Galeria */}
       <section className="relative py-8">
         <div className="absolute inset-0 bg-[radial-gradient(circle,_rgba(212,175,55,0.08),_transparent_50%)]"></div>
 
-        <Galeria />
+        <div className="relative z-10">
+          <Galeria />
+        </div>
       </section>
 
       {/* CTA Final */}
@@ -91,5 +100,3 @@ export default function App() {
     </div>
   );
 }
-```
-
