@@ -1,3 +1,5 @@
+import hero from "../assets/hero.jpg";
+
 export default function Hero() {
   return (
     <section
@@ -26,7 +28,7 @@ export default function Hero() {
         </div>
 
         <img
-          src="/src/assets/hero.jpg"
+          src={hero}
           alt="Hero"
           className="rounded-[40px] shadow-2xl"
         />
