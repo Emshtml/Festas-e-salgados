@@ -1,4 +1,3 @@
-
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Destaques from "./components/Destaques";
@@ -93,37 +92,4 @@ export default function App() {
   );
 }
 ```
-
-# Resultado da mudança premium
-
-* Visual cinematográfico
-* Fundo sofisticado
-* Glow premium dourado
-* Aparência de startup gastronômica
-* Glassmorphism elegante
-* Melhor profundidade visual
-* Hero mais premium
-* Seções mais modernas
-* Melhor experiência visual
-* Mantém todo funcionamento atual
-* Compatível com Vercel
-* Sem alterar componentes existentes
-* Sem quebrar imports
-* Sem mudar estrutura do projeto
-
-# Depois execute
-
-```bash
-npm run build
-```
-
-Se funcionar:
-
-```bash
-git add .
-git commit -m "Premium UI upgrade"
-git push
-```
-
-A Vercel fará o novo deploy automaticamente.
 
